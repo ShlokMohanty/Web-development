@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Form</title>
+<link  rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+<!--jQuery library-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<!--Popper JS-->
+<script src="https://cdnjs.cloudfare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<!--Latest Compiled Javascript-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container"><br>
+<h1 class="text-success text-center">Register Yourself Here</h1>
+<div class="col-lg-8 m-auto d-block">
+<form action="#" onsubmit="return validation()" class="bg-light">
+<div class="form-group">
+<label> Username: </label>
+<input type="text" name="user" class="form-control" id="user" autocomplete="off">
+<span id="Username"></span>
+</div>
+<div class="form-group">
+<label> User-id: </label>
+<input type="text" name="mail" class="form-control" id="mail" autocomplete="off">
+</div>
+<div class="form-group">
+<label> Password: </label>
+<input type="text" name="pass" class="form-control" id="key" autocomplete="off">
+<div class="form-group">
+<label> Confirm Password: </label>
+<input type="text" name="pass" class="form-control" id="key" autocomplete="off">
+</div>
+<div class="form-group">
+<label> Contact-number: </label>
+<input type="text" name="mobile" class="form-control" id="mobilenumber" autocomplete="off"><br>
+<input type="submit" name="submit" value="submit" class="btn btn-success">
+</div>
+</form>
+</div>
+</div>
+<!--<p><input type="text" class="box" value="ENTER USERNAME" id="username" /></p>
+<p><input type="password" class="box" value="ENTER PASSWORD" id="pass" /></p>
+<p style="text-align:left"><input type="submit" id="button" /></p>
+</form>
+</div>-->
+<script type="text/javascript" src="script.js">
+function validation(){
+    var user = document.getElementById('user').value;
+    if(user == "") {
+        document.getElementById('Username').innerHTML="Please fill the username field";
+    }
+}
+</script>
+</body>
+</html>
