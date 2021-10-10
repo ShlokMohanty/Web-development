@@ -35,9 +35,82 @@ html {
   }
   .squad-description {
     margin: auto;
-    margin-top: 2.5rem ;
+    margin-top: 2.5rem;
     width: 50%;
     font-size: 20px;
     color: var(--gray-secondary);
   }
   
+  .squad-description {
+    margin: auto;
+    margin-top: 2.5rem ;
+    width: 50%;
+    font-size: 20px;
+    color: var(--gray-secondary);
+  }
+   hr {
+    width: 80%;
+    margin: auto ;
+  }
+  .teams {
+    display: flex;
+    flex-direction: column;
+    align-teams: center;
+  }
+  .team-container {
+    width: 100%;
+    /* border: 1px solid black; */
+    margin-bottom: 13rem;
+  }
+  .mentor-box {
+    width: 55%;
+    display: flex;
+    margin: auto ;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .team-member-container {
+    margin: auto ;
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 335px;
+    overflow: hidden;
+    margin-top: 4rem;
+    margin-bottom: 5rem;
+  }
+  #core-team {
+    width: 90%;
+    height: 390px;
+  }
+  .team-container h1 {
+    border-radius: 20px;
+    margin: auto ;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 50px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+  }
+  .member-box > img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    z-index: -2;
+    object-fit: cover;
+    object-position: top;
+  }
+  .mentor-box img,
+  #core-team img {
+    width: 200px;
+    height: 200px;
+  }
+  .member-name {
+    font-size: 22px;
+    color: var(--black);
+    margin-bottom: 4px;
+  }
+  
+
+    margin-bottom
