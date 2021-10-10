@@ -1,0 +1,43 @@
+:root {
+  --white: #fff;
+  --black: #282828;
+  --logo-blue: #4285f4;
+  --logo-green: #0f9d58;
+  --logo-yellow: #faceca;
+  --gray-secondary: #777777;
+  --main-shadow: 0.3rem 0.3rem 0.6rem 0rem rgba(0,0,0,0.205);
+  --nav-shadow: 0rem 0.1rem 1.6rem 0.6rem rgba(64,64,64,0.1);
+  --side-nav-shadow: -0.3rem 0.2rem 1.6rem 0.6rem rgba(64,64,64,0.1);
+  --border-radius: 1.5rem ;
+  --border-radius-circle: 100%;
+}
+html {
+  font-size: 64.5%;
+}
+@media (max-width: 990px) {
+  html {
+    font-size: 55%;
+  }
+  @media (max-width: 768px) {
+    html {
+      font-size: 45%;
+    }
+  }
+  * {
+    font-family: 'barlow', sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  /*Page Heading*/
+  .Page-head {
+    margin-top: 140px;
+  }
+  .squad-description {
+    margin: auto;
+    margin-top: 2.5rem ;
+    width: 50%;
+    font-size: 20px;
+    color: var(--gray-secondary);
+  }
+  
