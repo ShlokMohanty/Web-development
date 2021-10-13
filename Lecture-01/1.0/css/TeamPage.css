@@ -145,6 +145,38 @@ html {
   color: var(--gray-secondary);
 }
 .member-socials {
+  display: flex;
+  padding-top: 5px;
+  font-size: 20px;
+  width: 52%;
+  margin: auto ;
+  align-items: center ;
+  justify-content: space-between;
+  
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  color: var(--gray-secondary);
+}
+.member-socials a {
+  color: var(--gray-secondary);
+}
+.hide-btn {
+  display: inline-block;
+  padding: 10px 30px;
+  font-size: 15px;
+  font-weight: 300;
+  border: 0.1rem solid var(--black);
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem ;
+  -ms-border-radius: 1rem ;
   
   
 
