@@ -177,6 +177,19 @@ html {
   -webkit-border-radius: 1rem;
   -moz-border-radius: 1rem ;
   -ms-border-radius: 1rem ;
+  -o-border-radius: 1rem;
+  margin: 0 auto;
+  width: 150px;
+  text-align: center;
+  cursor: pointer;
+}
+@media screen and (min-width: 1307px) {
+  #cp-btn {
+    display: none;
+  }
+  #graphics-btn {
+    display: none;
+  }
   
   
 
