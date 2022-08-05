@@ -1,0 +1,9 @@
+if(authenticated){
+renderApp();
+}
+else {
+renderLogin();
+}
+
+with Ternary :
+authenticated ? renderApp() : renderLogin();
