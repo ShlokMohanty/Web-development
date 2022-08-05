@@ -1,0 +1,29 @@
+const vehicles = ['mustang', 'f-150', 'expectation'];
+constc car = vehicles[0]
+const truck = vehicles[1]
+const SUV = vehicles[2]
+
+with destructuring:
+const vehicles = ['mustang','f-150', 'expedition '];
+const [car, truck, SUV] = vehicles
+const [car,,SUV] = vehicles
+function calculate(a,b) {
+const add = a+b;
+const subtract = a-b;
+const multiply = a*b;
+const divide = a/b;
+return [add, subtract, multiply, divide];
+}
+const [add.subtract,multiply,divide] = calculate(4,7);
+Destructuring objects :
+const vehicleOne = {
+brand: 'Ford',
+model: 'Mustang',
+type: 'car',
+year: 2021,
+color: 'red'
+}
+myVehicle(vehicleOne);
+function myVehicle(vehicle){
+const message = 'My' + type + 'is a' + color + ' ' + brand + ' '
+}
