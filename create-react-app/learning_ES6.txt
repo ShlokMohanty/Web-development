@@ -1,0 +1,45 @@
+classes:
+instead of using the keyword function to intiate it , we use the keyword class, and 
+the properties are assigned inside a constructor() method.
+simple class constructor :
+class Car{ // classname = car 
+constructor(name){
+this.brand = name;
+}
+}
+const mycar = new Car("Ford");
+Method in a class :
+class Car {
+constrcutor(name){
+this.brand = name;
+present(){
+return 'I have a' + this.brand ;
+}
+}
+const mycar = new Car("Ford");
+mycar.present();
+}
+class Inheritence :
+use the extends keyword :
+class Car {
+constructor(name){
+this.brand = name;
+}
+present(){
+return 'I have a ' + this.brand;
+}
+}
+class Model extends Car {
+constructor(name, mod){
+super(name); //refers to the parent class for getting access to the parents properties and methods
+this.model = mod;
+}
+show(){
+return this.present() + ', it is a ' + this.model
+}
+}
+const mycar = new Model("Ford", "Mustang");
+mycar.show();
+
+
+}
