@@ -1,0 +1,12 @@
+not defining the variables would get assigned to the global object.unless we were in the strict mode 
+then we got error if the variables were undefined .
+ways of defining variables: const, let, var
+var: outside of a function , belongs to the global scope 
+var: inside of a function , belongs to that function 
+var: inside of a block , for loop , the variable is still available outside of this block .
+var has a function scope , not a block scope .
+let is the block scoped version of teh var , and is limited to the block(or expression) where it is defined
+lat has a block scope 
+const is a variable that once it has created , its value can never change .
+const has a block scope .
+value cannot be changed in the block scope 
