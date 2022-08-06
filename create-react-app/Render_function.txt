@@ -1,0 +1,28 @@
+ReactDOM.render() : takes 2 arguments , HTML code and HTML element .
+purpose : function is to display the specified HTML code inside the specified HTML element 
+another folder in the root directoryv of the react project , named 'public' which contains 
+the index.html file .
+Display a paragraph inside an element with the id of "root".
+RactDOM.render(<p>Hello</p>,document.getElementById('root'));
+<div id="root">:
+<body>
+<div id="root"></div>
+</body>
+HTML code :
+const myelement = (
+<table>
+<tr>
+<th>Name</th>
+</tr>
+<tr>
+<td>Elsa</td>
+</tr>
+</table>
+);
+ReactDOM.render(myelement, document.getElementById('root'));
+Root Node :
+the root node can be called whatever you like :
+<body>
+<header id='Sandy'></header>
+ReactDOM.render(<p></p>)
+</body>
