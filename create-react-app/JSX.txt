@@ -1,0 +1,53 @@
+writing HTML elements in js nad place them in the DOM without any createElement() and/or appendChild()
+JSX converts HTML tags into react elements
+JSX :
+const myElement = <h1>I love JSX</h1>;
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(myElement);
+without JSX:
+const myElement = React.createElement('h1', {}, 'I do not use JSX!');
+const root = ReactDOM.createRoot(document.getElementById('root'));\
+root.render(myElement);
+Expressions in jSX:
+const myElement = <h1>React is {5+5} times better with JSX</h1>
+inserting a large block of html :
+const myElement = (
+<ul>
+<l1></li>
+<li></li>
+</ul>
+);
+One top level Element :
+HTML code must be wrapped in ONE top level element 
+so if we want to write 2 paragraphs , we must put them inside a parent element, like a div element 
+const myElement = (
+<div>
+<p>I m a paragraph</p>
+</div>
+)
+wrapping two paragraphs :
+const myElement = (
+<>
+<p>I m a paragraph</p>
+</>
+);
+elements must be closed 
+close elements with />
+const myElement = <input type="text"/>
+Attribute class = className
+class attribute is a much used attribute in html , but since JSX is rendered as js and class 
+keyword is a reserved word in js , not allowed to use it in js.
+use the class attribute className instead.
+const myElement = <h1 className="myclass">Hello World</h1>;
+conditions - if statement :
+React supports if statements , but not inside JSX
+const x=5;
+let text = "Goodbye";
+if (x < 10) {
+text= "Hello";
+}
+const myElement = <h1>{text}</h1>
+use ternary expressions instead :
+const x=5;
+const myElement = <h1>{(x) < 10 ? "Hello" : "GoodBye"}</h1>;
+
