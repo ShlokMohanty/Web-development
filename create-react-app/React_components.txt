@@ -1,0 +1,49 @@
+components : independent and reusable bits of code 
+similar js functions , but work in isolation and return HTML 
+comes in two types :
+Class component must include the extends React.Component statement :
+creates an inheritance to React.
+gives component access to React .
+component requires a render() method which returns HTML .
+class Car extends React.Component {
+render() {
+return <h2>Hi, I am a car!</h2>
+}
+}
+Function Component:
+returns HTML , and behaves much the same way as a class component and function components can be written using 
+much less code, are easier to uderstand 
+
+function Car() {
+return <h2>Hi, I am a Car!</h2>
+}
+Rendering a component :
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Car />);
+Props:
+components can be passed as props , which stands for properties 
+they are like function arguments, and we would send them into the component as attributes .
+function Car(props) {
+return <h2>I am a {props.color} Car!</h2>
+}
+const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Car color="red"/>);
+components in components :
+function Car() {
+return <h2>I am  a Car!</h2>;
+}
+function Garage() {
+return (
+<>
+<h1>who lives in my Garage?</h1>
+<Car/>
+</>
+);
+}
+const root = ReactDOM.createRoot(document.getelementById('root'));
+root.render(<Garage />);
+components in file :
+function Car() {
+return <h2>Hi, I am a Car!</h2>
+}
+export default Car;
